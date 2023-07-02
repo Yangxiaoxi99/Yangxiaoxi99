@@ -1,0 +1,18 @@
+docker install and cofigure
+#1 点击启用或关闭windows 功能 -打开hyperv 虚拟机 linux 在重启的时候点击f10 进入bios-security -advanced -enable vitual box 就是打开虚拟机允许
+#2 搜索powershell 管理员打开之后输入
+systeminfo #查看系统信息
+wsl --list --online  #查看wsl 版本
+wsl --install -d Ubuntu-22.04 #安装一个最新的
+   8 wsl -l -v 看看名字和版本 v是1就是用的wsl 1
+  wsl --set-version Ubuntu-22.04 2  设置你自己用的这个ubuntu 用wsl 2
+  S C:\WINDOWS\system32> wsl -l -v
+  NAME            STATE           VERSION
+* Ubuntu-22.04    Running         1
+PS C:\WINDOWS\system32> wsl --set-version Ubuntu-22.04 2
+正在进行转换，这可能需要几分钟时间...
+有关与 WSL 2 的主要区别的信息，请访问 https://aka.ms/wsl2
+转换完成。 显示这个配置完成
+ubuntu 可以在microsift store 中下载
+配置其用户名为yang 
+然后打开docker 登录 成功
